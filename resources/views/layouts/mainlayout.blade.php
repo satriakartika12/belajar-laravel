@@ -19,6 +19,7 @@
         <a class="nav-link active" aria-current="page" href="/">Home</a>
         <a class="nav-link" href="/students">Students</a>
         <a class="nav-link" href="/kelasroom">Kelas</a>
+        <a class="nav-link" href="/ekstrakulikuler">Ekstrakulikuler</a>
       </div>
     </div>
   </div>

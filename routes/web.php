@@ -4,6 +4,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\studentcontroller;
 use App\Http\Controllers\kelascontroller;
+use App\Http\Controllers\ekstrakulikulercontroller;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +30,7 @@ Route::get('/', function () {
 
 Route::get('/students', [studentcontroller::class, 'index']);
 Route::get('/kelasroom', [kelascontroller::class, 'index']);
+Route::get('/ekstrakulikuler', [ekstrakulikulercontroller::class, 'index']);
 
 
 //route::view('/students','students',[
