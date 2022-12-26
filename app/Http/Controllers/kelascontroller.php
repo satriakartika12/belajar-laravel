@@ -8,7 +8,7 @@ class kelascontroller extends Controller
 {
     public function index()
     {
-        $kelas = kelasroom::with('students')->get();
+        $kelas = kelasroom::with('students', 'homeroomteachers')->get();
         return view('kelasroom', ['kelaslist' => $kelas]);
     }
 }

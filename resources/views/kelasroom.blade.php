@@ -9,13 +9,17 @@
         <tr>
             <th>Nomor</th>
             <th>kelas</th>
-            <th>Nama</th>
+            <th>Home Room Teacher</th>
+            <th>Nama Teacher</th>
 
 </tr>
 @foreach ($kelaslist as $data)
 <tr>
         <td>{{$loop->iteration}}</td>
         <td>{{ $data->nama }}</td>
+        <td>
+            {{$data->homeroomteachers->nama}}
+        </td>
         <td> 
             @foreach ($data->students as $student)
             {{$student ['nama']}} |
