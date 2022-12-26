@@ -10,8 +10,8 @@
             <th>Nama</th>
             <th>gender</th>
             <th>Kelas</th>
-            
             <th>Ekstrakulikuler</th>
+            <th>HomeRoom Teacher</th>
 
 </tr>
 @foreach ($studentlist as $data)
@@ -25,6 +25,9 @@
                 - {{$item->name}}<br>
             @endforeach
             </td>
+            <td>
+                {{$data->kelas->homeroomteachers->nama}}
+            </td> 
 </tr>
 @endforeach
 </table>
