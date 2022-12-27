@@ -30,7 +30,11 @@ Route::get('/', function () {
 
 
 Route::get('/students', [studentcontroller::class, 'index']);
+Route::get('/student/{id}', [studentcontroller::class, 'show']);
+
 Route::get('/kelasroom', [kelascontroller::class, 'index']);
+Route::get('/kelas-detail/{id}', [kelascontroller::class, 'show']);
+
 Route::get('/ekstrakulikuler', [ekstrakulikulercontroller::class, 'index']);
 
 Route::get('/teacher', [teachercontroller::class, 'index']);

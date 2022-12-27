@@ -16,7 +16,7 @@
 <tr>
         <td>{{$loop->iteration}}</td>
         <td>{{ $data->nama }}</td>
-        <td><button type="button" class="btn btn-primary">Detail</button></td>
+        <td><a href="kelas-detail/{{ $data->id }}">Detail</a></td>
 
 </tr>
 @endforeach

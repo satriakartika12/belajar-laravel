@@ -11,4 +11,9 @@ class kelascontroller extends Controller
         $kelas = kelasroom::get();
         return view('kelasroom', ['kelaslist' => $kelas]);
     }
+    public function show($id)
+    {
+        $kelas = kelasroom::with(['students','homeroomteachers'])->findorfail($id);
+        return view('kelas-detail', ['kelas' => $kelas]);
+    }
 }

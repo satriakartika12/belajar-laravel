@@ -13,4 +13,10 @@ class studentcontroller extends Controller
         return view('students', ['studentlist' => $student]);
 
     }
+   
+    public function show($id)
+    {
+        $student = student::with(['kelas.homeroomteachers','ekstrakulikulers'])->findorfail($id);
+        return view('student-detail', ['student' => $student]);
+    }
 }

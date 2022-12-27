@@ -19,7 +19,7 @@
         <td>{{ $data->nis }}</td>
         <td>{{ $data->nama }}</td>
         <td>{{ $data->gender }}</td>
-        <td><button type="button" class="btn btn-primary">Detail</button></td>
+        <td><a href="student/{{ $data->id }}">Detail</a></td>
 </tr>
 @endforeach
 </table>
