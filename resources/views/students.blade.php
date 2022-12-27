@@ -9,9 +9,7 @@
             <th>Nomor</th> 
             <th>Nama</th>
             <th>gender</th>
-            <th>Kelas</th>
-            <th>Ekstrakulikuler</th>
-            <th>HomeRoom Teacher</th>
+            <th>Action</th>
 
 </tr>
 @foreach ($studentlist as $data)
@@ -19,15 +17,7 @@
         <td>{{$loop->iteration}}</td>
         <td>{{ $data->nama }}</td>
         <td>{{ $data->gender }}</td>
-        <td>{{ $data->kelas['nama'] }}</td>
-        <td>
-            @foreach ($data->Ekstrakulikulers as $item)
-                - {{$item->name}}<br>
-            @endforeach
-            </td>
-            <td>
-                {{$data->kelas->homeroomteachers->nama}}
-            </td> 
+        <td><button type="button" class="btn btn-primary">Detail</button></td>
 </tr>
 @endforeach
 </table>

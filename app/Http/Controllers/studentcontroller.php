@@ -9,7 +9,7 @@ class studentcontroller extends Controller
 {
     public function index()
     {
-        $student = student::with('kelas.homeroomteachers','ekstrakulikulers')->get();
+        $student = student::get();
         return view('students', ['studentlist' => $student]);
 
     }

@@ -9,17 +9,13 @@
         <tr>
             <th>Nomor</th> 
             <th>Nama</th>
-            <th>Students</th>
+            <th>Action</th>
 </tr>
 @foreach ($ekskullist as $data)
 <tr>
         <td>{{$loop->iteration}}</td>
         <td>{{ $data->name }}</td>
-        <td>
-            @foreach ($data->studentsekskul as $item)
-                - {{$item->nama}}<br>
-            @endforeach
-        </td>
+        <td><button type="button" class="btn btn-primary">Detail</button></td>
 </tr>
 @endforeach
 

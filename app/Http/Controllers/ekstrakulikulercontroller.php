@@ -11,7 +11,7 @@ class ekstrakulikulercontroller extends Controller
 {
     public function index(){
 
-    $ekskul = ekstrakulikuler::with('studentsekskul')->get();
+    $ekskul = ekstrakulikuler::get();
         return view('ekstrakulikuler', ['ekskullist' => $ekskul]);
     }
 }
