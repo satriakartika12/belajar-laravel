@@ -7,6 +7,7 @@
     <table class="table">
         <tr>
             <th>Nomor</th> 
+            <th>NIS</th>
             <th>Nama</th>
             <th>gender</th>
             <th>Action</th>
@@ -15,6 +16,7 @@
 @foreach ($studentlist as $data)
 <tr>
         <td>{{$loop->iteration}}</td>
+        <td>{{ $data->nis }}</td>
         <td>{{ $data->nama }}</td>
         <td>{{ $data->gender }}</td>
         <td><button type="button" class="btn btn-primary">Detail</button></td>
